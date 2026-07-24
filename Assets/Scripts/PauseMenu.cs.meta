@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 42d862635cc70a14db5d9efbfedc1b64
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - buttonPrefab: {fileID: 111805993013643938, guid: af7e44691ef5c8b4781e4bdb359daa0c, type: 3}
+  - buttonContainer: {fileID: 6137541513468661088, guid: bd25eb5243c2468408b33b011398d7c5, type: 3}
+  - pausePanel: {fileID: 1217304223545595563, guid: bd25eb5243c2468408b33b011398d7c5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
