@@ -265,19 +265,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4706362745842115765, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 185
+      value: 99.703285
       objectReference: {fileID: 0}
     - target: {fileID: 4706362745842115765, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 133
+      value: -102.67062
       objectReference: {fileID: 0}
     - target: {fileID: 6664978358337594929, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
       propertyPath: m_Name
       value: CurrencyCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7011323946441529833, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.9999847
+      objectReference: {fileID: 0}
+    - target: {fileID: 7011323946441529833, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 150.99998
+      objectReference: {fileID: 0}
     - target: {fileID: 7131196897157032155, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
       propertyPath: m_text
       value: Click for gold!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366498841930416384, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366498841930416384, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 7549947732483350831, guid: 3a3fed939f5da50499957de64c8e3a82, type: 3}
       propertyPath: m_Pivot.x
@@ -634,8 +650,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318, y: -7}
-  m_SizeDelta: {x: 350, y: 250}
+  m_AnchoredPosition: {x: -13, y: -194}
+  m_SizeDelta: {x: 720, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1123311513
 MonoBehaviour:
@@ -646,7 +662,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1123311511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -654,7 +670,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 3
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -912,7 +928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -359, y: -115}
+  m_AnchoredPosition: {x: -271, y: -4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1424294021
@@ -932,8 +948,8 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 1
+  m_ChildAlignment: 4
+  m_Spacing: 3
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -1032,7 +1048,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -297, y: 216}
+  m_AnchoredPosition: {x: -105, y: -102.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829310715
