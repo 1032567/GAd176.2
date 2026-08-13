@@ -123,8 +123,8 @@ public class Shop : MenuBase
     void RefreshLabels()
     {
         if (buttonLabels.Count < 3) return;
-        buttonLabels[0].text = "Gold/Click +" + clickUpgradeAmount + " (Cost: " + clickUpgradeCost + ")";
-        buttonLabels[1].text = "Gold/Tick +"  + tickUpgradeAmount  + " (Cost: " + tickUpgradeCost  + ")";
-        buttonLabels[2].text = "Tick Speed" + " (Cost: " + speedUpgradeCost + ")";
+        buttonLabels[0].text = "Click +" + clickUpgradeAmount + " (" + clickUpgradeCost + "g)"; // shorter text so it fits the button
+        buttonLabels[1].text = "Tick +"  + tickUpgradeAmount  + " (" + tickUpgradeCost  + "g)";
+        buttonLabels[2].text = "Speed ("  + speedUpgradeCost  + "g)";
     }
 }
