@@ -38,4 +38,10 @@ public class ManualCurrency : CurrencyBase
         ReportGold(goldPerClick);
         Debug.Log("Gold added from click"); // for testing and debugging
     }
+
+    // raises goldPerClick, called by the shop
+    public void AddGoldPerClick(int amount)
+    {
+        goldPerClick += amount;
+    }
 }

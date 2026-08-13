@@ -36,4 +36,22 @@ public class IdleCurrency : CurrencyBase
             Generate();
         }
     }
+
+    // raises goldPerTick, called by the shop
+    public void AddGoldPerTick(int amount)
+    {
+        goldPerTick += amount;
+    }
+
+    // shrinks tickInterval, called by the shop
+    public void ReduceTickInterval(float amount)
+    {
+        tickInterval = Mathf.Max(0.1f, tickInterval - amount); // guard - never let ticking stop completely
+    }
+
+    // returns the current gold-per-tick amount, for UI display
+    public int GetGoldPerTick() => goldPerTick;
+
+    // returns the current tick interval, for UI display
+    public float GetTickInterval() => tickInterval;
 }
