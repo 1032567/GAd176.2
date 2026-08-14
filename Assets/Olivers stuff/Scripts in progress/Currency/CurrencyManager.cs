@@ -46,11 +46,39 @@ public class CurrencyManager : MonoBehaviour
         onGoldChanged?.Invoke(); // fire event so any listener can react
     }
 
+    // called by the shop when the player buys something
+    public void SpendGold(int amount)
+    {
+        currentGold -= amount;
+        onGoldChanged?.Invoke(); // fire event so any listener can react
+    }
+
     // called by CurrencyButton when the player clicks
     public void OnClickGold()
     {
         if (manual == null) return;
         manual.Generate();
+    }
+
+    // called by the shop to raise gold per click
+    public void UpgradeGoldPerClick(int amount)
+    {
+        if (manual == null) return;
+        manual.AddGoldPerClick(amount);
+    }
+
+    // called by the shop to raise gold per tick
+    public void UpgradeGoldPerTick(int amount)
+    {
+        if (idle == null) return;
+        idle.AddGoldPerTick(amount);
+    }
+
+    // called by the shop to make ticks happen more often
+    public void UpgradeTickSpeed(float amount)
+    {
+        if (idle == null) return;
+        idle.ReduceTickInterval(amount);
     }
 
     // returns the current gold total
@@ -59,7 +87,7 @@ public class CurrencyManager : MonoBehaviour
     // returns gold generated per second, for UI display
     public float GetGoldPerSecond()
     {
-        if (thresholds == null || thresholds.tickInterval <= 0f) return 0f;
-        return thresholds.goldPerTick / thresholds.tickInterval;
+        if (idle == null || idle.GetTickInterval() <= 0f) return 0f;
+        return idle.GetGoldPerTick() / idle.GetTickInterval();
     }
 }
