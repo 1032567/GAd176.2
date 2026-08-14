@@ -15,7 +15,6 @@ public class PauseMenu : MenuBase
         return new List<MenuButtonData>
         {
             new MenuButtonData { label = "Resume", onClick = ResumeGame },
-            new MenuButtonData { label = "Options", onClick = OpenOptions }, // CHANGED label + method name
             new MenuButtonData { label = "Main Menu", onClick = ReturnToMainMenu },
             new MenuButtonData { label = "Quit", onClick = QuitGame }
         };
@@ -41,11 +40,6 @@ public class PauseMenu : MenuBase
         isPaused = false;
         pausePanel.SetActive(false);
         Time.timeScale = 1f;
-    }
-
-    public void OpenOptions() // RENAMED from OpenSettings
-    {
-        OptionsMenu.Instance.ShowOptions();
     }
 
     public void ReturnToMainMenu()
