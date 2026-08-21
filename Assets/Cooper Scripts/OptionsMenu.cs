@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class OptionsMenu : MenuBase
 {
-    public static OptionsMenu Instance; // NEW - the single shared reference
+    public static OptionsMenu Instance;
 
     public GameObject optionsPanel;
 
@@ -13,9 +13,8 @@ public class OptionsMenu : MenuBase
 
     public string creditsSceneName = "Credits";
 
-    void Awake() // NEW
+    void Awake()
     {
-        // If a copy already exists (e.g. we came back to MainMenu), destroy this new one
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -23,7 +22,7 @@ public class OptionsMenu : MenuBase
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject); // survive scene changes
+        DontDestroyOnLoad(gameObject);
     }
 
     protected override List<MenuButtonData> GetButtonData()
@@ -37,7 +36,7 @@ public class OptionsMenu : MenuBase
         };
     }
 
-    public void ShowOptions() // NEW - renamed for clarity, called from other menus
+    public void ShowOptions()
     {
         optionsPanel.SetActive(true);
     }
